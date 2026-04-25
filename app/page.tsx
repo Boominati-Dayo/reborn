@@ -379,12 +379,12 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="hidden lg:block absolute right-8 -top-16 z-20">
+            <div className="hidden lg:block absolute right-8 -top-[200px] z-20">
               <Image 
                 src="/assets/baby2.png" 
                 alt="Baby doll" 
-                width={200} 
-                height={200} 
+                width={350} 
+                height={350} 
                 className="rounded-full" 
               />
             </div>
