@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getProducts, getGalleryItems } from "@/lib/utils/db-helpers";
 
-const BASE_URL = "https://www.miacatherinereborns.com";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = [

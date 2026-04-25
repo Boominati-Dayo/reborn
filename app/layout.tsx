@@ -68,14 +68,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.miacatherinereborns.com",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com",
     title: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     description:
       "Discover premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel. Free shipping on orders over $200.",
     siteName: "Baby Bloom Dolls",
     images: [
       {
-        url: '/assets/og-logo.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: "Baby Bloom Dolls - Premium Handcrafted Silicone Reborn Baby Dolls",
@@ -86,21 +86,22 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     description: "Discover premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel.",
-    images: ['/assets/og-logo.jpg'],
+    images: ['/og-image.png'],
     creator: '@babybloomdolls',
   },
   alternates: {
-    canonical: "https://www.miacatherinereborns.com",
+    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com",
     languages: {
-      en: "https://www.miacatherinereborns.com",
+      en: process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com",
     },
   },
   icons: {
     icon: [
-      { url: '/assets/baby2.png', type: 'image/png' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicons/web-app-manifest-512x512.png', type: 'image/png' },
     ],
     apple: [
-      { url: '/assets/baby2.png' },
+      { url: '/apple-icon.png' },
     ],
   },
 };
