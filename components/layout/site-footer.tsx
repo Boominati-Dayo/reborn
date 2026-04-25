@@ -44,14 +44,12 @@ export function SiteFooter() {
         {/* Brand Section */}
         <div className="space-y-4">
           <div className="flex flex-col items-center md:items-start">
-            <div className="relative w-24 h-24 mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/assets/owners-logo/my-logo.jpg"
-                alt="Baby Bloom Dolls"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/owners-logo/BabyBloomDollsLogo.png"
+              alt="Baby Bloom Dolls"
+              className="h-16 mb-4"
+            />
             <p className="text-pink-100 text-sm leading-relaxed max-w-xs text-center md:text-left">
               Handcrafted with love, bringing comfort and joy to your arms. Each baby is a unique masterpiece of healing art.
             </p>
