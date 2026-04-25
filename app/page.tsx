@@ -383,9 +383,9 @@ export default function Home() {
               <Image 
                 src="/assets/baby2.png" 
                 alt="Baby doll" 
-                width={150} 
-                height={150} 
-                className="rounded-full shadow-2xl border-4 border-white/30" 
+                width={200} 
+                height={200} 
+                className="rounded-full" 
               />
             </div>
           </div>
