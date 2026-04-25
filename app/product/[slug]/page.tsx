@@ -28,16 +28,16 @@ export async function generateMetadata({ params }: ProductPageProps) {
 
   if (!product) {
     return {
-      title: "Product Not Found - Reborn Babies",
+      title: "Product Not Found - Baby Bloom Dolls",
     };
   }
 
   return {
-    title: `${product.name} | Mia Catherine Reborns`,
+    title: `${product.name} | Baby Bloom Dolls`,
     description: product.description,
     keywords: [product.name, "reborn baby", "silicone reborn", "realistic baby doll", "collectible reborn"],
     openGraph: {
-      title: `${product.name} | Mia Catherine Reborns`,
+      title: `${product.name} | Baby Bloom Dolls`,
       description: product.description,
       type: "website",
       images: product.images?.[0] ? [

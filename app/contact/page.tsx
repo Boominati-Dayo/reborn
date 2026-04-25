@@ -3,6 +3,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { FormInput, FormTextarea } from "@/components/ui/form-input";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa";
 import toast from "react-hot-toast";
 
@@ -115,13 +116,14 @@ export default function ContactPage() {
 
   return (
     <div className="w-full max-w-viewport mx-auto pb-20">
-      <div className="text-center mb-16">
-
-        <h1 className="text-4xl md:text-5xl font-serif mb-4 text-gray-900">Get In Touch</h1>
-        <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-          Have a question about Mia Catherine Reborns or your order? We'd love to
-          hear from you.
-        </p>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
+        <div className="text-center flex-1">
+          <h1 className="text-4xl md:text-5xl font-serif mb-4 text-gray-900">Get In Touch</h1>
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+            Have a question about Baby Bloom Dolls or your order? We'd love to hear from you.
+          </p>
+        </div>
+        <Image src="/assets/baby1.png" alt="Baby doll" width={100} height={100} className="rounded-full" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">

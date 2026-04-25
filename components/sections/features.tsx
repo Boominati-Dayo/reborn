@@ -42,7 +42,7 @@ export function FeaturesSection() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">Mia Catherine Reborns</span>
+              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">Baby Bloom Dolls</span>
             </h2>
             <div className="w-16 h-1 bg-gradient-to-r from-rose-400 to-pink-400 mx-auto rounded-full"></div>
           </div>

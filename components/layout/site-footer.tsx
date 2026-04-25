@@ -48,7 +48,7 @@ export function SiteFooter() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/assets/owners-logo/my-logo.jpg"
-                alt="Mia Catherine Reborns"
+                alt="Baby Bloom Dolls"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -144,7 +144,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Mia Catherine Reborns. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Baby Bloom Dolls. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -97,12 +97,12 @@ export default function OrderConfirmationPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/assets/owners-logo/my-logo.jpg"
-              alt="Mia Catherine Reborns Logo"
+              alt="Baby Bloom Dolls Logo"
               className="h-24 w-24 object-cover rounded-full"
             />
           </div>
           <h1 className="text-3xl font-bold mb-2">Order Receipt</h1>
-          <p className="text-gray-500">Mia Catherine Reborns</p>
+          <p className="text-gray-500">Baby Bloom Dolls</p>
         </div>
 
         {/* Order Details */}

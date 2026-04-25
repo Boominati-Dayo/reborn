@@ -2,7 +2,7 @@ import { getProducts } from "@/lib/utils/db-helpers";
 import { ShopClient } from "@/components/shop/shop-client";
 
 export const metadata = {
-  title: "Shop Reborn Baby Dolls | Mia Catherine Reborns",
+  title: "Shop Reborn Baby Dolls | Baby Bloom Dolls",
   description: "Browse our premium collection of handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel. Find your perfect reborn companion today.",
   keywords: [
     "buy reborn dolls",
@@ -14,7 +14,7 @@ export const metadata = {
     "reborn doll store",
   ],
   openGraph: {
-    title: "Shop Reborn Baby Dolls | Mia Catherine Reborns",
+    title: "Shop Reborn Baby Dolls | Baby Bloom Dolls",
     description: "Browse our premium collection of handcrafted silicone reborn baby dolls.",
     type: "website",
   },

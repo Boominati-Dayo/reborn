@@ -24,11 +24,11 @@ const displayFont = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com"),
   title: {
-    default: "Mia Catherine Reborns | Premium Handcrafted Silicone Reborn Baby Dolls",
-    template: "%s | Mia Catherine Reborns",
+    default: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
+    template: "%s | Baby Bloom Dolls",
   },
   description:
-    "Discover premium handcrafted silicone reborn baby dolls at Mia Catherine Reborns. Our lifelike, weighted reborn babies bring comfort, healing, and joy. Free shipping on orders over $200. Medical-grade platinum silicone, artisan-crafted realism.",
+    "Discover premium handcrafted silicone reborn baby dolls at Baby Bloom Dolls. Our lifelike, weighted reborn babies bring comfort, healing, and joy. Free shipping on orders over $200. Medical-grade platinum silicone, artisan-crafted realism.",
   keywords: [
     "reborn baby dolls",
     "silicone reborn baby",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     "reborn dolls for sale",
     "silicone doll baby",
   ],
-  authors: [{ name: "Mia Catherine Reborns" }],
-  creator: "Mia Catherine Reborns",
-  publisher: "Mia Catherine Reborns",
+  authors: [{ name: "Baby Bloom Dolls" }],
+  creator: "Baby Bloom Dolls",
+  publisher: "Baby Bloom Dolls",
   robots: {
     index: true,
     follow: true,
@@ -69,25 +69,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.miacatherinereborns.com",
-    title: "Mia Catherine Reborns | Premium Handcrafted Silicone Reborn Baby Dolls",
+    title: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     description:
       "Discover premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel. Free shipping on orders over $200.",
-    siteName: "Mia Catherine Reborns",
+    siteName: "Baby Bloom Dolls",
     images: [
       {
         url: '/assets/og-logo.jpg',
         width: 1200,
         height: 630,
-        alt: "Mia Catherine Reborns - Premium Handcrafted Silicone Reborn Baby Dolls",
+        alt: "Baby Bloom Dolls - Premium Handcrafted Silicone Reborn Baby Dolls",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Mia Catherine Reborns | Premium Handcrafted Silicone Reborn Baby Dolls",
+    title: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     description: "Discover premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel.",
     images: ['/assets/og-logo.jpg'],
-    creator: '@miacatherinereborns',
+    creator: '@babybloomdolls',
   },
   alternates: {
     canonical: "https://www.miacatherinereborns.com",
@@ -97,10 +97,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/assets/baby1.png', type: 'image/png' },
+      { url: '/assets/baby2.png', type: 'image/png' },
     ],
     apple: [
-      { url: '/assets/baby1.png' },
+      { url: '/assets/baby2.png' },
     ],
   },
 };

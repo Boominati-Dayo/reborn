@@ -84,7 +84,7 @@ export default function AdminLayout({
         <div className="min-h-screen bg-gray-50 flex font-sans">
             {/* Mobile Header */}
             <div className="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-gray-200 px-4 py-3 z-20 flex justify-between items-center h-16">
-                <h2 className="text-lg font-serif font-bold text-pink-600">Mia Catherine Reborns</h2>
+                <h2 className="text-lg font-serif font-bold text-pink-600">Baby Bloom Dolls</h2>
                 <Button id="mobile-menu-button" variant="ghost" size="icon" onClick={() => document.getElementById('mobile-sidebar')?.classList.toggle('hidden')}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </Button>
