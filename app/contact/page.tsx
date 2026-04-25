@@ -123,23 +123,9 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Contact Information */}
-        <div className="lg:col-span-5 space-y-8 relative">
-          {/* Floating baby image */}
-          <div className="hidden lg:block absolute top-0 -right-4">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full blur-xl opacity-50" />
-              <Image 
-                src="/assets/baby1.png" 
-                alt="Baby doll" 
-                width={80} 
-                height={80} 
-                className="relative rounded-full shadow-xl border-4 border-white" 
-              />
-            </div>
-          </div>
-
+        <div className="lg:col-span-5 space-y-8">
           <div className="bg-gradient-to-br from-pink-50 to-white p-6 md:p-8 rounded-2xl border border-pink-100 shadow-sm">
             <h3 className="text-xl md:text-2xl font-serif mb-4 md:mb-6 text-gray-800">Contact Information</h3>
             <div className="space-y-4 md:space-y-6">

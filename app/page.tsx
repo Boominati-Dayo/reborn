@@ -169,7 +169,7 @@ export default function Home() {
 
       {/* Latest Creations */}
       <section className="py-12 md:py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6 relative">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-rose-50 border border-rose-100 mb-4 md:mb-6">
               <FaHandSparkles className="text-rose-500 text-xs" />
@@ -178,20 +178,6 @@ export default function Home() {
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
               Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">Creations</span>
             </h2>
-          </div>
-
-          {/* Floating baby image */}
-          <div className="absolute top-4 right-8 hidden lg:block">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full blur-xl opacity-50" />
-              <Image 
-                src="/assets/baby1.png" 
-                alt="Baby doll" 
-                width={100} 
-                height={100} 
-                className="relative rounded-full shadow-xl border-4 border-white" 
-              />
-            </div>
           </div>
 
           <ProductGrid 
@@ -309,19 +295,6 @@ export default function Home() {
                 <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-rose-300 rounded-full" />
                 <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-rose-200/50 rounded-full" />
               </div>
-              {/* Floating baby image */}
-              <div className="absolute -top-8 -right-8">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full blur-xl opacity-50" />
-                  <Image 
-                    src="/assets/baby2.png" 
-                    alt="Baby doll" 
-                    width={80} 
-                    height={80} 
-                    className="relative rounded-full shadow-xl border-4 border-white" 
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -379,30 +352,41 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
-              Have Questions? <span className="text-rose-100">Let's Talk</span>
-            </h2>
-            <p className="text-white/90 text-lg md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto">
-              We'd love to hear from you. Reach out with any questions about our babies or custom orders.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
-              <Button 
-                href="/contact" 
-                size="lg" 
-                className="!bg-white !text-gray-900 hover:!bg-gray-100 !border-0 rounded-full px-8 md:px-10 py-3 md:py-4 w-full sm:w-auto"
-              >
-                Contact Us
-                <FaArrowRight className="ml-2" />
-              </Button>
-              <Button 
-                href="/faq" 
-                variant="outline" 
-                size="lg" 
-                className="!border-2 !border-white !text-white hover:!bg-white/20 !bg-transparent rounded-full px-8 md:px-10 py-3 md:py-4 w-full sm:w-auto"
-              >
-                Read FAQ
-              </Button>
+          <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 lg:gap-12">
+            <div className="text-center lg:text-left max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
+                Have Questions? <span className="text-rose-100">Let's Talk</span>
+              </h2>
+              <p className="text-white/90 text-lg md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto lg:mx-0">
+                We'd love to hear from you. Reach out with any questions about our babies or custom orders.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 md:gap-4">
+                <Button 
+                  href="/contact" 
+                  size="lg" 
+                  className="!bg-white !text-gray-900 hover:!bg-gray-100 !border-0 rounded-full px-8 md:px-10 py-3 md:py-4 w-full sm:w-auto"
+                >
+                  Contact Us
+                  <FaArrowRight className="ml-2" />
+                </Button>
+                <Button 
+                  href="/faq" 
+                  variant="outline" 
+                  size="lg" 
+                  className="!border-2 !border-white !text-white hover:!bg-white/20 !bg-transparent rounded-full px-8 md:px-10 py-3 md:py-4 w-full sm:w-auto"
+                >
+                  Read FAQ
+                </Button>
+              </div>
+            </div>
+            <div className="hidden lg:block flex-shrink-0">
+              <Image 
+                src="/assets/baby2.png" 
+                alt="Baby doll" 
+                width={150} 
+                height={150} 
+                className="rounded-full shadow-2xl border-4 border-white/30" 
+              />
             </div>
           </div>
         </div>
