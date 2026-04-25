@@ -45,8 +45,12 @@ export default function SiteHeader() {
 
   return (
     <header className={`h-[60px] flex justify-between items-center px-4 md:px-6 z-[60] transition-all duration-300 ${positionClass} bg-white shadow-md`}>
-      <Link href="/" className="text-xl md:text-2xl font-bold no-underline hover:no-underline z-20 tracking-wide text-rose-500">
-        MIA CATHERINE REBORNS
+      <Link href="/" className="z-20">
+        <img 
+          src="/assets/owners-logo/BabyBloomDollsLogo.png" 
+          alt="Baby Bloom Dolls" 
+          className="h-10 md:h-12" 
+        />
       </Link>
 
       {/* Desktop Navigation */}
