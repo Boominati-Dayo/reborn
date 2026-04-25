@@ -340,7 +340,7 @@ export default function Home() {
       </section>
 
       {/* Contact CTA - Full Color - Touches Footer */}
-      <section className="py-20 md:py-24 bg-gradient-to-r from-rose-500 via-rose-400 to-pink-500 relative overflow-hidden mb-auto">
+      <section className="py-20 md:py-24 bg-gradient-to-r from-rose-500 via-rose-400 to-pink-500 relative overflow-visible mb-auto">
         <div className="absolute inset-0 opacity-10">
           {[FaQuestionCircle, FaHeart, FaBaby, FaGift].map((Icon, i) => (
             <Icon key={i} className="absolute text-white" style={{ 
@@ -379,7 +379,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="hidden lg:block flex-shrink-0">
+            <div className="hidden lg:block absolute right-8 -top-16 z-20">
               <Image 
                 src="/assets/baby2.png" 
                 alt="Baby doll" 
