@@ -169,19 +169,28 @@ export default function Home() {
 
       {/* Latest Creations */}
       <section className="py-12 md:py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex items-center justify-between gap-4 mb-10 md:mb-16">
-            <div className="flex-1 text-center">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-rose-50 border border-rose-100 mb-4 md:mb-6">
-                <FaHandSparkles className="text-rose-500 text-xs" />
-                <span className="text-sm font-medium text-rose-600">New Arrivals</span>
-              </div>
-              <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
-                Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">Creations</span>
-              </h2>
+        <div className="container mx-auto px-4 md:px-6 relative">
+          <div className="text-center mb-10 md:mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-rose-50 border border-rose-100 mb-4 md:mb-6">
+              <FaHandSparkles className="text-rose-500 text-xs" />
+              <span className="text-sm font-medium text-rose-600">New Arrivals</span>
             </div>
-            <div className="hidden md:block">
-              <Image src="/assets/baby1.png" alt="Baby doll" width={80} height={80} className="rounded-full" />
+            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+              Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">Creations</span>
+            </h2>
+          </div>
+
+          {/* Floating baby image */}
+          <div className="absolute top-4 right-8 hidden lg:block">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full blur-xl opacity-50" />
+              <Image 
+                src="/assets/baby1.png" 
+                alt="Baby doll" 
+                width={100} 
+                height={100} 
+                className="relative rounded-full shadow-xl border-4 border-white" 
+              />
             </div>
           </div>
 
@@ -285,10 +294,7 @@ export default function Home() {
             </div>
 
             {/* Creative Organic Shape - No Rectangle */}
-            <div className="flex-1 hidden lg:flex justify-center items-center gap-4">
-              <div>
-                <Image src="/assets/baby2.png" alt="Baby doll" width={120} height={120} className="rounded-full" />
-              </div>
+            <div className="flex-1 hidden lg:flex justify-center">
               <div className="relative w-[320px] h-[380px]">
                 <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/40 to-pink-500/40 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-xl animate-pulse" />
                 <div className="relative w-full h-full bg-rose-100 rounded-[50%_50%_50%_50%/60%_40%_60%_40%] overflow-hidden shadow-2xl border-4 border-white/30 transform rotate-2">
@@ -302,6 +308,19 @@ export default function Home() {
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-rose-300 rounded-full" />
                 <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-rose-200/50 rounded-full" />
+              </div>
+              {/* Floating baby image */}
+              <div className="absolute -top-8 -right-8">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full blur-xl opacity-50" />
+                  <Image 
+                    src="/assets/baby2.png" 
+                    alt="Baby doll" 
+                    width={80} 
+                    height={80} 
+                    className="relative rounded-full shadow-xl border-4 border-white" 
+                  />
+                </div>
               </div>
             </div>
           </div>

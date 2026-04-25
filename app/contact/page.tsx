@@ -116,78 +116,30 @@ export default function ContactPage() {
 
   return (
     <div className="w-full max-w-viewport mx-auto pb-20">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
-        <div className="text-center flex-1">
-          <h1 className="text-4xl md:text-5xl font-serif mb-4 text-gray-900">Get In Touch</h1>
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-            Have a question about Baby Bloom Dolls or your order? We'd love to hear from you.
-          </p>
-        </div>
-        <Image src="/assets/baby1.png" alt="Baby doll" width={100} height={100} className="rounded-full" />
+      <div className="text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-serif mb-4 text-gray-900">Get In Touch</h1>
+        <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+          Have a question about Baby Bloom Dolls or your order? We'd love to hear from you.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        {/* Contact Form */}
-        <div className="lg:col-span-7 bg-white p-8 rounded-2xl shadow-sm border border-pink-100">
-          <h2 className="text-2xl font-serif mb-6 text-gray-800">Send us a Message</h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <FormInput
-                id="name"
-                name="name"
-                label="Your Name"
-                type="text"
-                placeholder="John Doe"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                error={errors.name}
-              />
-              <FormInput
-                id="email"
-                name="email"
-                label="Your Email"
-                type="email"
-                placeholder="john.doe@example.com"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                error={errors.email}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative">
+        {/* Contact Information */}
+        <div className="lg:col-span-5 space-y-8 relative">
+          {/* Floating baby image */}
+          <div className="hidden lg:block absolute top-0 -right-4">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full blur-xl opacity-50" />
+              <Image 
+                src="/assets/baby1.png" 
+                alt="Baby doll" 
+                width={80} 
+                height={80} 
+                className="relative rounded-full shadow-xl border-4 border-white" 
               />
             </div>
-            <FormInput
-              id="subject"
-              name="subject"
-              label="Subject"
-              type="text"
-              placeholder="Inquiry about Reborn Baby"
-              required
-              value={formData.subject}
-              onChange={handleChange}
-              error={errors.subject}
-            />
-            <FormTextarea
-              id="message"
-              name="message"
-              label="Your Message"
-              placeholder="Type your message here..."
-              required
-              rows={6}
-              value={formData.message}
-              onChange={handleChange}
-              error={errors.message}
-            />
+          </div>
 
-
-
-            <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto px-8">
-              {isSubmitting ? "Sending..." : "Send Message"}
-            </Button>
-          </form>
-        </div>
-
-        {/* Contact Information */}
-        <div className="lg:col-span-5 space-y-8">
           <div className="bg-gradient-to-br from-pink-50 to-white p-6 md:p-8 rounded-2xl border border-pink-100 shadow-sm">
             <h3 className="text-xl md:text-2xl font-serif mb-4 md:mb-6 text-gray-800">Contact Information</h3>
             <div className="space-y-4 md:space-y-6">
@@ -198,10 +150,10 @@ export default function ContactPage() {
                 <div className="min-w-0">
                   <p className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Email Us</p>
                   <a
-                    href="mailto:info@miacatherinereborns.com"
+                    href="mailto:info@babybloomdolls.com"
                     className="text-gray-600 hover:text-pink-600 transition-colors no-underline text-sm md:text-base break-all"
                   >
-                    info@miacatherinereborns.com
+                    info@babybloomdolls.com
                   </a>
                 </div>
               </div>
@@ -265,6 +217,65 @@ export default function ContactPage() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Contact Form */}
+        <div className="lg:col-span-7 bg-white p-8 rounded-2xl shadow-sm border border-pink-100">
+          <h2 className="text-2xl font-serif mb-6 text-gray-800">Send us a Message</h2>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <FormInput
+                id="name"
+                name="name"
+                label="Your Name"
+                type="text"
+                placeholder="John Doe"
+                required
+                value={formData.name}
+                onChange={handleChange}
+                error={errors.name}
+              />
+              <FormInput
+                id="email"
+                name="email"
+                label="Your Email"
+                type="email"
+                placeholder="john.doe@example.com"
+                required
+                value={formData.email}
+                onChange={handleChange}
+                error={errors.email}
+              />
+            </div>
+            <FormInput
+              id="subject"
+              name="subject"
+              label="Subject"
+              type="text"
+              placeholder="Inquiry about Reborn Baby"
+              required
+              value={formData.subject}
+              onChange={handleChange}
+              error={errors.subject}
+            />
+            <FormTextarea
+              id="message"
+              name="message"
+              label="Your Message"
+              placeholder="Type your message here..."
+              required
+              rows={6}
+              value={formData.message}
+              onChange={handleChange}
+              error={errors.message}
+            />
+
+
+
+            <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto px-8">
+              {isSubmitting ? "Sending..." : "Send Message"}
+            </Button>
+          </form>
         </div>
       </div>
     </div>
