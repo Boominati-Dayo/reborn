@@ -28,7 +28,7 @@ CLOUDINARY_URL=cloudinary://your_api_key:your_api_secret@your_cloud_name
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 # Admin User (for seeding)
-ADMIN_EMAIL=admin@rebornbabies.com
+ADMIN_EMAIL=babybloomdoll@gmail.com
 ADMIN_PASSWORD=changeme123
 ```
 
@@ -57,7 +57,7 @@ npm run seed
 
 This will create:
 - Sample products
-- Default admin user (email: admin@rebornbabies.com, password: changeme123)
+- Default admin user (email: babybloomdoll@gmail.com, password: changeme123)
 - Initial content blocks
 
 **⚠️ IMPORTANT:** Change the admin password after first login!

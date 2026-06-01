@@ -22,6 +22,6 @@ CLOUDINARY_URL=
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 # Admin User (for seeding)
-ADMIN_EMAIL=admin@rebornbabies.com
+ADMIN_EMAIL=babybloomdoll@gmail.com
 ADMIN_PASSWORD=changeme123
 

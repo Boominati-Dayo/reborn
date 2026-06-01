@@ -74,7 +74,7 @@ async function seed() {
     }
 
     // Seed Admin User (change password after first login!)
-    const adminEmail = process.env.ADMIN_EMAIL || "admin@rebornbabies.com";
+    const adminEmail = process.env.ADMIN_EMAIL || "babybloomdoll@gmail.com";
     const adminPassword = process.env.ADMIN_PASSWORD || "changeme123";
 
     const existingAdmin = await AdminUser.findOne({ email: adminEmail });

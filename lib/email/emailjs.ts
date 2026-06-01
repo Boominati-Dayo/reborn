@@ -67,7 +67,7 @@ Thank you for choosing Reborn Babies!
 
     // Send admin notification if template is configured
     if (process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_ADMIN_ALERT) {
-      const adminEmail = process.env.ADMIN_EMAIL || "admin@rebornbabies.com";
+      const adminEmail = process.env.ADMIN_EMAIL || "babybloomdoll@gmail.com";
       const adminMessage = `
 New Order Received!
 
