@@ -8,7 +8,7 @@ export function generateEmailTemplate(content: string) {
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Mia Catherine Reborns</title>
+      <title>Baby Bloom Dolls</title>
       <style>
         body {
           font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -85,16 +85,16 @@ export function generateEmailTemplate(content: string) {
       <div style="padding: 20px 0;">
         <div class="container">
           <div class="header">
-            <img src="${logoUrl}" alt="Mia Catherine Reborns" class="logo">
+            <img src="${logoUrl}" alt="Baby Bloom Dolls" class="logo">
           </div>
           <div class="content">
             ${content}
           </div>
           <div class="footer">
-            <p>&copy; ${new Date().getFullYear()} Mia Catherine Reborns. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} Baby Bloom Dolls. All rights reserved.</p>
             <p>
               <a href="${process.env.NEXT_PUBLIC_SITE_URL}">Visit Website</a> | 
-              <a href="mailto:info@miacatherinereborns.com">Contact Us</a>
+              <a href="mailto:info@babybloomdolls.com">Contact Us</a>
             </p>
           </div>
         </div>

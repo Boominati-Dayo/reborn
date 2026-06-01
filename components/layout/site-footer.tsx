@@ -127,7 +127,7 @@ export function SiteFooter() {
           <ul className="space-y-4 text-sm text-gray-300 flex flex-col items-center md:items-start">
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-pink-500" />
-              <span>123 Artisan Way,<br />Creative District, NY 10001</span>
+              <span>United States</span>
             </li>
             <li className="flex items-center gap-3">
               <FaPhone className="text-pink-500" />
@@ -135,7 +135,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-pink-500" />
-              <span>babybloomdoll@gmail.com</span>
+              <span>info@babybloomdolls.com</span>
             </li>
           </ul>
         </div>

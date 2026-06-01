@@ -22,7 +22,7 @@ const displayFont = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://www.babybloomdolls.com"),
   title: {
     default: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     template: "%s | Baby Bloom Dolls",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://www.babybloomdolls.com",
     title: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     description:
       "Discover premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel. Free shipping on orders over $200.",
@@ -90,9 +90,9 @@ export const metadata: Metadata = {
     creator: '@babybloomdolls',
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com",
+    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://www.babybloomdolls.com",
     languages: {
-      en: process.env.NEXT_PUBLIC_APP_URL || "https://www.miacatherinereborns.com",
+      en: process.env.NEXT_PUBLIC_APP_URL || "https://www.babybloomdolls.com",
     },
   },
   icons: {

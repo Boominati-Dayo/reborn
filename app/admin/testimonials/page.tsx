@@ -104,7 +104,7 @@ export default function ManageTestimonialsPage() {
     };
 
     const bulkTestimonials = [
-        { name: "Amanda H.", role: "New Mom", content: "This baby saved me. After my loss I was drowning in grief and now I have something to hold. She feels real in my arms and the weight is perfect. Thank you Mia Catherine.", rating: 5 },
+        { name: "Amanda H.", role: "New Mom", content: "This baby saved me. After my loss I was drowning in grief and now I have something to hold. She feels real in my arms and the weight is perfect. Thank you Baby Bloom Dolls.", rating: 5 },
         { name: "Marcus W.", role: "Collector", content: "Been collecting for 8 years. This is hands down the best quality silicone I've ever seen. The veining and skin texture are incredible. Worth every dollar.", rating: 5 },
         { name: "Janet K.", role: "Grandmother", content: "Bought for my granddaughter's 6th birthday. She named her 'Princess' and takes her everywhere. The look on her face is priceless. Great quality for the price.", rating: 5 },
         { name: "Robert M.", role: "Father", content: "Got this for my daughter who has autism. It's become her comfort object. She sleeps better now. The silicone is soft and safe.", rating: 5 },

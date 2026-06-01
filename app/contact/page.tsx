@@ -165,12 +165,11 @@ export default function ContactPage() {
                 </div>
                 <div className="min-w-0">
                   <p className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Visit Us</p>
-                  <p className="text-gray-600 mb-0 text-sm md:text-base">
-                    123 Artisan Lane<br />
-                    Craftville, CA 90210
+                   <p className="text-gray-600 mb-0 text-sm md:text-base">
+                    United States
                   </p>
                   <p className="text-xs text-gray-400 mt-2 italic">
-                    (Studio visits by appointment only)
+                    (By appointment only)
                   </p>
                 </div>
               </div>

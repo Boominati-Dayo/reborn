@@ -1,13 +1,13 @@
-# Mia Catherine Reborns - Robots.txt
+# Baby Bloom Dolls - Robots.txt
 # Optimized for maximum SEO indexing
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.miacatherinereborns.com/sitemap.xml
-Sitemap: https://www.miacatherinereborns.com/sitemap-products.xml
-Sitemap: https://www.miacatherinereborns.com/sitemap-images.xml
+Sitemap: https://www.babybloomdolls.com/sitemap.xml
+Sitemap: https://www.babybloomdolls.com/sitemap-products.xml
+Sitemap: https://www.babybloomdolls.com/sitemap-images.xml
 
 # Crawl-delay for server-friendly crawling
 Crawl-delay: 1

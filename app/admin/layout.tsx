@@ -93,7 +93,7 @@ export default function AdminLayout({
             {/* Sidebar */}
             <aside id="mobile-sidebar" className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200 fixed inset-y-0 z-30 pt-16 md:pt-0 transition-transform shadow-lg md:shadow-none overflow-x-hidden">
                 <div className="p-6 border-b border-gray-100 hidden md:block flex-shrink-0">
-                    <h2 className="text-2xl font-serif font-bold text-pink-600">Mia Catherine Reborns</h2>
+                    <h2 className="text-2xl font-serif font-bold text-pink-600">Baby Bloom Dolls</h2>
                 </div>
                 <nav className="p-4 space-y-2 flex-1 overflow-y-auto">
                     <Link
