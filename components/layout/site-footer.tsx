@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { FaTiktok, FaFacebookF, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt, FaTwitter, FaPinterest, FaYoutube } from "react-icons/fa";
+import { FaTiktok, FaFacebookF, FaInstagram, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaPinterest, FaYoutube } from "react-icons/fa";
 
 const iconMap: any = {
   FaTiktok: <FaTiktok />,
@@ -128,10 +128,6 @@ export function SiteFooter() {
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-pink-500" />
               <span>United States</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <FaPhone className="text-pink-500" />
-              <span>+1 (555) 123-4567</span>
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-pink-500" />

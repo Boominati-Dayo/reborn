@@ -4,7 +4,7 @@ import { useState, useEffect, FormEvent } from "react";
 import { FormInput, FormTextarea } from "@/components/ui/form-input";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa";
 import toast from "react-hot-toast";
 
 export default function ContactPage() {
@@ -144,20 +144,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 md:gap-4 group">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center text-pink-500 shadow-sm group-hover:scale-110 transition-transform shrink-0">
-                  <FaPhone className="text-lg md:text-xl" />
-                </div>
-                <div className="min-w-0">
-                  <p className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Call Us</p>
-                  <a
-                    href="tel:+15551234567"
-                    className="text-gray-600 hover:text-pink-600 transition-colors no-underline text-sm md:text-base"
-                  >
-                    +1 (555) 123-4567
-                  </a>
-                </div>
-              </div>
 
               <div className="flex items-start gap-3 md:gap-4 group">
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center text-pink-500 shadow-sm group-hover:scale-110 transition-transform shrink-0">
