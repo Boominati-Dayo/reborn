@@ -1,37 +1,29 @@
-import { getGalleryItems } from "@/lib/utils/db-helpers";
-import Image from "next/image";
+"use client";
+
+import { useEffect, useState } from "react";
 import { GalleryGrid } from "@/components/sections/gallery-grid";
 
-export const metadata = {
-  title: "Gallery - Reborn Babies",
-  description:
-    "Explore a collection of our most cherished creations. Each photo highlights the artistry and lifelike detail of our silicone babies.",
-};
+export default function GalleryPage() {
+  const [galleryItems, setGalleryItems] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-export default async function GalleryPage() {
-  // Fetch gallery items from database
-  // For now, return empty array if database not connected
-  let galleryItems = [];
-  try {
-    // Only try to fetch if MONGODB_URI is set
-    if (process.env.MONGODB_URI) {
-      galleryItems = await getGalleryItems({});
-    }
-  } catch (error) {
-    console.error("Error fetching gallery items:", error);
-  }
+  useEffect(() => {
+    const fetchGallery = async () => {
+      try {
+        const res = await fetch("/api/admin/gallery");
+        if (res.ok) {
+          const data = await res.json();
+          setGalleryItems(data);
+        }
+      } catch (error) {
+        console.error("Error fetching gallery items:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
-  // If no items in database, show placeholder items
-  if (galleryItems.length === 0) {
-    galleryItems = Array.from({ length: 6 }, (_, i) => ({
-      _id: `placeholder-${i}`,
-      title: `Gallery Image ${i + 1}`,
-      imageUrl: "",
-      tags: [],
-      featured: false,
-      order: i,
-    }));
-  }
+    fetchGallery();
+  }, []);
 
   return (
     <div className="w-full max-w-viewport mx-auto pb-10">
@@ -40,8 +32,13 @@ export default async function GalleryPage() {
         Explore a collection of our most cherished creations. Each photo
         highlights the artistry and lifelike detail of our silicone babies.
       </p>
-      <GalleryGrid items={galleryItems} />
+      {isLoading ? (
+        <div className="flex justify-center py-20">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500" />
+        </div>
+      ) : (
+        <GalleryGrid items={galleryItems} />
+      )}
     </div>
   );
 }
-
