@@ -49,7 +49,7 @@ export default function SiteHeader() {
         <img 
           src="/assets/owners-logo/BabyBloomDollsLogo.png" 
           alt="Baby Bloom Dolls" 
-          className="h-10 md:h-12" 
+          className="h-12 md:h-16" 
         />
       </Link>
 

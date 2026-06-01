@@ -48,7 +48,7 @@ export function SiteFooter() {
             <img
               src="/assets/owners-logo/BabyBloomDollsLogo.png"
               alt="Baby Bloom Dolls"
-              className="h-16 mb-4"
+              className="h-20 mb-4"
             />
             <p className="text-pink-100 text-sm leading-relaxed max-w-xs text-center md:text-left">
               Handcrafted with love, bringing comfort and joy to your arms. Each baby is a unique masterpiece of healing art.
