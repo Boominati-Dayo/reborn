@@ -1,5 +1,5 @@
 export function generateEmailTemplate(content: string) {
-  const logoUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/assets/owners-logo/my-logo.jpg`;
+  const logoUrl = `https://baby-bloom-dolls.vercel.app/assets/owners-logo/BabyBloomDollsLogo.png`;
   const primaryColor = "#f08ba8";
 
   return `
