@@ -135,7 +135,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-pink-500" />
-              <span>info@babybloomdolls.com</span>
+              <span>babybloomdoll@gmail.com</span>
             </li>
           </ul>
         </div>

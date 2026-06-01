@@ -5,9 +5,9 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.babybloomdolls.com/sitemap.xml
-Sitemap: https://www.babybloomdolls.com/sitemap-products.xml
-Sitemap: https://www.babybloomdolls.com/sitemap-images.xml
+Sitemap: https://baby-bloom-dolls.vercel.app/sitemap.xml
+Sitemap: https://baby-bloom-dolls.vercel.app/sitemap-products.xml
+Sitemap: https://baby-bloom-dolls.vercel.app/sitemap-images.xml
 
 # Crawl-delay for server-friendly crawling
 Crawl-delay: 1

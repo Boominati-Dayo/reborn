@@ -94,7 +94,7 @@ export function generateEmailTemplate(content: string) {
             <p>&copy; ${new Date().getFullYear()} Baby Bloom Dolls. All rights reserved.</p>
             <p>
               <a href="${process.env.NEXT_PUBLIC_SITE_URL}">Visit Website</a> | 
-              <a href="mailto:info@babybloomdolls.com">Contact Us</a>
+              <a href="mailto:babybloomdoll@gmail.com">Contact Us</a>
             </p>
           </div>
         </div>
