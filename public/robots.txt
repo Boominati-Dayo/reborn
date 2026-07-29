@@ -3,25 +3,21 @@
 
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://baby-bloom-dolls.vercel.app/sitemap.xml
-Sitemap: https://baby-bloom-dolls.vercel.app/sitemap-products.xml
-Sitemap: https://baby-bloom-dolls.vercel.app/sitemap-images.xml
-
-# Crawl-delay for server-friendly crawling
-Crawl-delay: 1
-
-# Block admin and private areas
+Allow: /assets/
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
-Disallow: /assets/
 Disallow: /cart
 Disallow: /checkout
 Disallow: /order/
 
-# Enhanced SEO Directives
+# Sitemaps
+Sitemap: https://babybloomdolls.com/sitemap.xml
+
+# Crawl-delay for server-friendly crawling
+Crawl-delay: 1
+
+# Enhanced AI SEO Directives
 User-agent: GPTBot
 Allow: /
 User-agent: ChatGPT-User
@@ -30,9 +26,11 @@ User-agent: Google-Extended
 Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
+User-agent: Googlebot-Image
+Allow: /
 User-agent: AdsBot-Google
 Allow: /
-User-agent: Mediabot
-Allow: /
 User-agent: Applebot
+Allow: /
+User-agent: Pinterestbot
 Allow: /

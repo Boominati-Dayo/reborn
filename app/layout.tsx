@@ -23,7 +23,7 @@ const displayFont = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://baby-bloom-dolls.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com"),
   title: {
     default: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     template: "%s | Baby Bloom Dolls",
@@ -31,26 +31,38 @@ export const metadata: Metadata = {
   description:
     "Discover premium handcrafted silicone reborn baby dolls at Baby Bloom Dolls. Our lifelike, weighted reborn babies bring comfort, healing, and joy. Free shipping on orders over $200. Medical-grade platinum silicone, artisan-crafted realism.",
   keywords: [
-    "reborn baby dolls",
+    "reborn baby dolls for sale",
+    "lifelike reborn baby dolls",
     "silicone reborn baby",
     "realistic reborn dolls",
-    "lifelike silicone baby",
     "premium reborn dolls",
     "handcrafted reborn babies",
     "full body silicone baby",
     "weighted reborn baby",
     "collectible reborn dolls",
     "therapeutic reborn dolls",
-    "silicone baby dolls",
+    "silicone baby dolls for sale",
     "reborn doll for grief",
     "reborn doll collector",
-    "realistic baby doll",
+    "most realistic reborn baby dolls",
     "silicone newborn doll",
     "platinum silicone baby",
-    "baby reborn dolls",
+    "reborn dolls online",
     "real baby doll realistic",
     "reborn dolls for sale",
     "silicone doll baby",
+    "custom reborn baby dolls",
+    "reborn baby girl dolls",
+    "reborn baby boy dolls",
+    "affordable reborn dolls",
+    "premium reborn baby dolls",
+    "best reborn baby sites",
+    "reborn doll nursery",
+    "authentic reborn babies",
+    "newborn reborn doll",
+    "realistic baby doll silicone",
+    "hand painted reborn dolls",
+    "reborn baby artist",
   ],
   authors: [{ name: "Baby Bloom Dolls" }],
   creator: "Baby Bloom Dolls",
@@ -69,7 +81,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL || "https://baby-bloom-dolls.vercel.app",
+    url: process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com",
     title: "Baby Bloom Dolls | Premium Handcrafted Silicone Reborn Baby Dolls",
     description:
       "Discover premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, artisan-crafted realism, weighted for authentic feel. Free shipping on orders over $200.",
@@ -132,16 +144,46 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
-              (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/6a67e1b54c74f91d46242ac4/1juisjblj';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-              })();
+              var _smartsupp = _smartsupp || {};
+              _smartsupp.key = '060a614999320f74ef75dae9b49aed8c250119ed';
+              window.smartsupp||(function(d) {
+                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                c.type='text/javascript';c.charset='utf-8';c.async=true;
+                c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+              })(document);
             `,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Store",
+              "name": "Baby Bloom Dolls",
+              "url": process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com",
+              "logo": "https://babybloomdolls.com/assets/owners-logo/BabyBloomDollsLogo.png",
+              "image": "https://babybloomdolls.com/og-image.png",
+              "description": "Premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, weighted for authentic feel.",
+              "email": "babybloomdolls0@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "United States"
+              },
+              "sameAs": [
+                "https://facebook.com/babybloomdolls",
+                "https://instagram.com/babybloomdolls"
+              ],
+              "makesOffer": {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Handcrafted Silicone Reborn Baby Dolls",
+                  "category": "Dolls & Accessories"
+                }
+              }
+            })
           }}
         />
       </body>

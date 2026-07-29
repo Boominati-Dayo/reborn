@@ -1,5 +1,5 @@
 export function generateEmailTemplate(content: string) {
-  const logoUrl = `https://baby-bloom-dolls.vercel.app/assets/owners-logo/BabyBloomDollsLogo.png`;
+  const logoUrl = `https://babybloomdolls.com/assets/owners-logo/BabyBloomDollsLogo.png`;
   const primaryColor = "#f08ba8";
 
   return `
@@ -94,7 +94,7 @@ export function generateEmailTemplate(content: string) {
             <p>&copy; ${new Date().getFullYear()} Baby Bloom Dolls. All rights reserved.</p>
             <p>
               <a href="${process.env.NEXT_PUBLIC_SITE_URL}">Visit Website</a> | 
-              <a href="mailto:babybloomdoll@gmail.com">Contact Us</a>
+              <a href="mailto:babybloomdolls0@gmail.com">Contact Us</a>
             </p>
           </div>
         </div>
