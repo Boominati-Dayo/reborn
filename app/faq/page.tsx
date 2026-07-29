@@ -118,8 +118,25 @@ export default function FAQPage() {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="w-full max-w-4xl mx-auto px-4 py-16">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-serif mb-4 text-gray-900">
                     Frequently Asked Questions

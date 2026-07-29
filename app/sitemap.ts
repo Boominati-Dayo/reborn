@@ -23,7 +23,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date(product.updatedAt || product.createdAt),
         changeFrequency: "weekly" as const,
         priority: 0.8,
-        images: product.images?.[0] ? [{ url: product.images[0], title: product.name }] : [],
       }));
 
       return [...pages, ...productUrls];

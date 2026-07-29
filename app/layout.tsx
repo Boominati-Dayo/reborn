@@ -29,8 +29,9 @@ export const metadata: Metadata = {
     template: "%s | Baby Bloom Dolls",
   },
   description:
-    "Discover premium handcrafted silicone reborn baby dolls at Baby Bloom Dolls. Our lifelike, weighted reborn babies bring comfort, healing, and joy. Free shipping on orders over $200. Medical-grade platinum silicone, artisan-crafted realism.",
+    "Discover premium handcrafted silicone reborn baby dolls at Baby Bloom Dolls. Lifelike, weighted reborn babies for sale — medical-grade platinum silicone, artisan-crafted for collectors, therapy, and gifting. Free shipping on orders over $200. Shop the most realistic reborn baby dolls online.",
   keywords: [
+    "reborn baby dolls",
     "reborn baby dolls for sale",
     "lifelike reborn baby dolls",
     "silicone reborn baby",
@@ -41,27 +42,33 @@ export const metadata: Metadata = {
     "weighted reborn baby",
     "collectible reborn dolls",
     "therapeutic reborn dolls",
-    "silicone baby dolls for sale",
     "reborn doll for grief",
-    "reborn doll collector",
+    "reborn doll therapy",
     "most realistic reborn baby dolls",
     "silicone newborn doll",
     "platinum silicone baby",
     "reborn dolls online",
     "real baby doll realistic",
     "reborn dolls for sale",
-    "silicone doll baby",
     "custom reborn baby dolls",
     "reborn baby girl dolls",
     "reborn baby boy dolls",
     "affordable reborn dolls",
     "premium reborn baby dolls",
     "best reborn baby sites",
-    "reborn doll nursery",
     "authentic reborn babies",
     "newborn reborn doll",
     "realistic baby doll silicone",
     "hand painted reborn dolls",
+    "lifelike reborn baby",
+    "realistic baby doll",
+    "full silicone reborn baby",
+    "silicone vs vinyl reborn dolls",
+    "reborn doll gift",
+    "handmade reborn dolls",
+    "realistic newborn doll",
+    "premium silicone reborn babies",
+    "silicone baby dolls for sale",
     "reborn baby artist",
   ],
   authors: [{ name: "Baby Bloom Dolls" }],
@@ -103,9 +110,9 @@ export const metadata: Metadata = {
     creator: '@babybloomdolls',
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://baby-bloom-dolls.vercel.app",
+    canonical: process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com",
     languages: {
-      en: process.env.NEXT_PUBLIC_APP_URL || "https://baby-bloom-dolls.vercel.app",
+      en: process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com",
     },
   },
   icons: {
@@ -160,21 +167,64 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Store",
+              "@type": "OnlineStore",
               "name": "Baby Bloom Dolls",
               "url": process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com",
               "logo": "https://babybloomdolls.com/assets/owners-logo/BabyBloomDollsLogo.png",
               "image": "https://babybloomdolls.com/og-image.png",
-              "description": "Premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, weighted for authentic feel.",
+              "description": "Premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, weighted for authentic feel. Free shipping available.",
               "email": "babybloomdolls0@gmail.com",
+              "foundingDate": "2023",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "United States"
               },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "babybloomdolls0@gmail.com",
+                "availableLanguage": "English"
+              },
               "sameAs": [
                 "https://facebook.com/babybloomdolls",
-                "https://instagram.com/babybloomdolls"
+                "https://instagram.com/babybloomdolls",
+                "https://pinterest.com/babybloomdolls"
               ],
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 14,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/FreeReturn"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": "1",
+                    "maxValue": "3",
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": "3",
+                    "maxValue": "7",
+                    "unitCode": "DAY"
+                  }
+                }
+              },
               "makesOffer": {
                 "@type": "Offer",
                 "itemOffered": {

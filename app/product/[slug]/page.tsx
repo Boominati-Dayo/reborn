@@ -78,8 +78,106 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const fullStars = Math.floor(product.rating || 0);
   const hasHalfStar = (product.rating || 0) % 1 >= 0.5;
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://babybloomdolls.com";
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "description": product.description || "",
+    "image": product.images?.[0] || "",
+    "sku": product._id?.toString() || product.slug,
+    "brand": {
+      "@type": "Brand",
+      "name": "Baby Bloom Dolls"
+    },
+    "category": "Dolls & Accessories",
+    "offers": {
+      "@type": "Offer",
+      "price": product.price,
+      "priceCurrency": "USD",
+      "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split("T")[0],
+      "availability": "https://schema.org/InStock",
+      "url": `${baseUrl}/product/${product.slug}`,
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "1",
+            "maxValue": "3",
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "3",
+            "maxValue": "7",
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 14,
+        "returnFees": "https://schema.org/FreeReturn"
+      }
+    },
+    ...(product.rating ? {
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": product.rating,
+        "reviewCount": product.reviewCount || 1,
+        "bestRating": "5"
+      }
+    } : {})
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Shop",
+        "item": `${baseUrl}/shop`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": product.name
+      }
+    ]
+  };
+
   return (
     <div className="w-full max-w-viewport mx-auto pb-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
         {/* Left Column: Image Gallery */}
         <div className="lg:col-span-6">
