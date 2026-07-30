@@ -136,10 +136,10 @@ export default function ContactPage() {
                 <div className="min-w-0">
                   <p className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Email Us</p>
                   <a
-                    href="mailto:babybloomdolls0@gmail.com"
+                    href="mailto:info@babybloomdolls.com"
                     className="text-gray-600 hover:text-pink-600 transition-colors no-underline text-sm md:text-base break-all"
                   >
-                    babybloomdolls0@gmail.com
+                    info@babybloomdolls.com
                   </a>
                 </div>
               </div>

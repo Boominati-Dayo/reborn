@@ -159,7 +159,7 @@ export default function RootLayout({
               "logo": "https://babybloomdolls.com/assets/owners-logo/BabyBloomDollsLogo.png",
               "image": "https://babybloomdolls.com/og-image.png",
               "description": "Premium handcrafted silicone reborn baby dolls. Medical-grade platinum silicone, weighted for authentic feel. Free shipping available.",
-              "email": "babybloomdolls0@gmail.com",
+              "email": "info@babybloomdolls.com",
               "foundingDate": "2023",
               "address": {
                 "@type": "PostalAddress",
@@ -168,7 +168,7 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
-                "email": "babybloomdolls0@gmail.com",
+                "email": "info@babybloomdolls.com",
                 "availableLanguage": "English"
               },
               "sameAs": [

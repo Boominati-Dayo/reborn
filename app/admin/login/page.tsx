@@ -99,7 +99,7 @@ export default function AdminLoginPage() {
           </Button>
         </form>
         <p className="text-sm text-gray-500 text-center mt-4">
-          Default: babybloomdolls0@gmail.com / changeme123
+          Default: info@babybloomdolls.com / changeme123
         </p>
         <div className="mt-6 text-center">
           <Link href="/" className="text-sm text-pink-600 hover:text-pink-700 font-medium hover:underline">
