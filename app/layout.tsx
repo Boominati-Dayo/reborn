@@ -148,7 +148,7 @@ export default function RootLayout({
           <Toaster position="bottom-right" />
           <OfflineIndicator />
         </CartProvider>
-        <script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=9LXvjMp0Rwfd" />
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/149363973.js" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
