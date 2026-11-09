@@ -31,6 +31,7 @@ export function ImageGallery({ images, productName }: ImageGalleryProps) {
             alt={`${productName} - Image ${selectedIndex + 1}`}
             width={800}
             height={500}
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
         ) : (
@@ -54,6 +55,7 @@ export function ImageGallery({ images, productName }: ImageGalleryProps) {
                 alt={`${productName} thumbnail ${index + 1}`}
                 width={100}
                 height={100}
+                sizes="100px"
                 className="w-full h-full object-cover"
               />
             ) : (

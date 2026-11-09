@@ -29,6 +29,7 @@ export function CartItemComponent({ item }: CartItemProps) {
               alt={item.name}
               width={80}
               height={80}
+              sizes="80px"
               className="w-full h-full object-cover"
             />
           ) : (

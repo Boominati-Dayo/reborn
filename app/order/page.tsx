@@ -352,7 +352,7 @@ export default function OrderPage() {
                   <label style={{ display: "flex" }} htmlFor={method.name} className="ml-3 flex-row items-center gap-3 cursor-pointer">
                     {method.logoUrl && (
                       <div className="w-8 h-8 relative rounded-md overflow-hidden border border-gray-200">
-                        <Image src={method.logoUrl} alt={method.name} fill className="object-cover" />
+                        <Image src={method.logoUrl} alt={method.name} fill sizes="32px" className="object-cover" />
                       </div>
                     )}
                     <div className="text-gray-900 font-medium font-semibold">{method.name}</div>
@@ -441,6 +441,7 @@ export default function OrderPage() {
                       src="/assets/fortinet logo.png"
                       alt="Fortinet Secured"
                       fill
+                      sizes="96px"
                       className="object-contain"
                     />
                   </div>
@@ -451,6 +452,7 @@ export default function OrderPage() {
                       src="/assets/cloudflare logo.png"
                       alt="Cloudflare Protected"
                       fill
+                      sizes="96px"
                       className="object-contain"
                     />
                   </div>

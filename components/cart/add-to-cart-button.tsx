@@ -77,6 +77,7 @@ export function AddToCartButton({ product }: AddToCartButtonProps) {
               src="/assets/fortinet logo.png"
               alt="Fortinet Secured"
               fill
+              sizes="96px"
               className="object-contain"
             />
           </div>
@@ -87,6 +88,7 @@ export function AddToCartButton({ product }: AddToCartButtonProps) {
               src="/assets/cloudflare logo.jpeg"
               alt="Cloudflare Protected"
               fill
+              sizes="96px"
               className="object-contain"
             />
           </div>
@@ -97,6 +99,7 @@ export function AddToCartButton({ product }: AddToCartButtonProps) {
               src="/assets/okta logo.png"
               alt="Okta Verified"
               fill
+              sizes="64px"
               className="object-contain"
             />
           </div>

@@ -82,6 +82,7 @@ export function ImageViewer({
                             src={images[currentIndex]}
                             alt={`Full screen view ${currentIndex + 1}`}
                             fill
+                            sizes="100vw"
                             className="object-contain"
                             priority
                         />

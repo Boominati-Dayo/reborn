@@ -270,6 +270,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                       src={p.images[0]}
                       alt={p.name}
                       fill
+                      sizes="(max-width: 768px) 140px, 180px"
                       className="object-cover group-hover:scale-105 transition-transform"
                     />
                   ) : (

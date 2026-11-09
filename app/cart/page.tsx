@@ -91,6 +91,7 @@ export default function CartPage() {
                     src="/assets/fortinet logo.png"
                     alt="Fortinet Secured"
                     fill
+                    sizes="96px"
                     className="object-contain"
                   />
                 </div>
@@ -101,6 +102,7 @@ export default function CartPage() {
                     src="/assets/cloudflare logo.png"
                     alt="Cloudflare Protected"
                     fill
+                    sizes="96px"
                     className="object-contain"
                   />
                 </div>

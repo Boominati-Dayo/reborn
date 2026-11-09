@@ -232,6 +232,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
             alt="Artisan Craftsmanship"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/50" />
@@ -288,6 +289,7 @@ export default function Home() {
                     src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Reborn Baby"
                     fill
+                    sizes="320px"
                     className="object-cover"
                   />
                 </div>
@@ -385,6 +387,7 @@ export default function Home() {
                 alt="Baby doll" 
                 width={350} 
                 height={350} 
+                sizes="350px"
                 className="rounded-full" 
               />
             </div>

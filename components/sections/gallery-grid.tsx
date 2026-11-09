@@ -45,6 +45,7 @@ return (
                   alt={item.title || "Gallery image"}
                   width={400}
                   height={400}
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
